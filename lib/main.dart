@@ -27,7 +27,26 @@ class _My_appState extends State<My_app> {
 
           body: ListView.separated(itemBuilder: (context, index) {
             return ListTile(
-
+              leading: Container(
+                width: 60,
+                height: 60,
+                
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                
+                child: CircleAvatar(
+                  backgroundImage: AssetImage(profile_img[index]),
+                ),
+          
+              ),
+              
+              title: Text(user_name[index],style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold)),
+              subtitle: Text(sub_tital[index],style: TextStyle(fontWeight: FontWeight.w500,fontSize: 18,),),
+            
+              onTap: () {
+                print(user_name[index]);
+              },
             );
 
           }, separatorBuilder: (context, index) {

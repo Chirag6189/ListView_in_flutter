@@ -25,6 +25,8 @@ class _My_appState extends State<My_app> {
             backgroundColor: Color.fromARGB(255, 67, 93, 229),
           ),
 
+          backgroundColor: Color.fromARGB(255, 196, 217, 239),
+
           body: ListView.separated(itemBuilder: (context, index) {
             return ListTile(
               leading: Container(
@@ -50,7 +52,7 @@ class _My_appState extends State<My_app> {
             );
 
           }, separatorBuilder: (context, index) {
-            return Divider(thickness: 1,);
+            return Divider(thickness: 1,color: Colors.black,);
           },
           itemCount: user_name.length,),
       ),

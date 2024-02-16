@@ -5,6 +5,9 @@ A new Flutter project.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
+    a simple list for employee. 
+    add profile img and user name , sub tital
+    make custome list for employee
 
 A few resources to get you started if this is your first Flutter project:
 

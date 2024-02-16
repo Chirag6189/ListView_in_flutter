@@ -13,6 +13,8 @@ class My_app extends StatefulWidget {
 class _My_appState extends State<My_app> {
   @override
   Widget build(BuildContext context) {
+    var user_name = ["Chirag Jadhav","John Doe","Mike Johnson","Emily Davis","Jane Smith","Alex Turner","Sophie Wilson","Olivia Brown","Charlie Parker","Grace Miller"];
+    var sub_tital = ["Java Developer","Software Developer","Marketing Specialist","Data Scientist","Graphic Designer","UX/UI Designer","Project Manager","Human Resources Manager","Mobile App Developer","Content Writer"];
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -20,8 +22,17 @@ class _My_appState extends State<My_app> {
             title: Text("Employee List",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
             centerTitle: true,
             backgroundColor: Color.fromARGB(255, 67, 93, 229),
-
           ),
+
+          body: ListView.separated(itemBuilder: (context, index) {
+            return ListTile(
+
+            );
+
+          }, separatorBuilder: (context, index) {
+            return Divider(thickness: 1,);
+          },
+          itemCount: user_name.length,),
       ),
     );
   }
